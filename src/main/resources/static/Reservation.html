@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+      <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PARTY COLOMBIA SALONES</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <p></p>
+    <header>
+        <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">}
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/USA.png" alt="Universidad sergio arboleda">
+    
+              <img src="./assets/MT.png" alt="misionTicLogo">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+              <a class="nav-link" href="inicio.html">Inicio <span class="sr-only"> </span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pruebaindex.html">Party Room</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clientes.html">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Category.html">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="message.html">Message</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservation.html">Reservation</a>
+            </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+      </header>
+    <div class="posicion">
+    <div class="posicion">
+        <div class="encoger">
+
+            <input class= "form-control" type="hidden" id="idReservation" placeholder="idReservation"> 
+            <label class="form-label">StartDate</label>  
+            <input class= "form-control" type="Date" id="startDate" placeholder="startDate">  
+            <label class="form-label">"DevolutionDate"</label>  
+            <input class= "form-control mb-2" type="Date" id="devolutionDate" placeholder="devolutionDate">
+            
+            <input class="btn btn-outline-dark btn-sm" type ="button" onclick="CargarRes()" title="Consultar" value="Consultar">
+            <input class="btn btn-outline-dark btn-sm" type ="button" onclick="ingresarDatosRes()" title="Registrar Reserva" value="Registrar Reserva">
+            <input class="btn btn-outline-dark btn-sm" type ="button" onclick="limpiarCamposRes(),habilitarRes()" title="Limpiar" value="Limpiar">       
+            <input class="btn btn-outline-dark btn-sm" type ="button" onclick="ReporteCD()" title="Reporte Completos vs Cancelados" value="Reporte Completos vs Cancelados">       
+            <input class="btn btn-outline-dark btn-sm" type ="button" onclick="CargarRes2020()" title="Reporte reservas 2020" value="Reporte reservas 2020">       
+            <input class="btn btn-outline-dark btn-sm" type ="button" onclick="CargarTOP()" title="TOP clientes" value="TOP clientes">  
+        </div>
+    </div>
+        <div class="posicion2" id="TablaP"></div>  
+    </div>
+    <!-- Footer Inicio-->
+  <footer id="footer" class="pb-4  pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="#"> Preguntas Frecuentes</a>
+        </div>
+
+        <div class="col-12 col-lg">
+          <a href="#"> Contactanos</a>
+        </div>
+
+        <div class="col-12 col-lg">
+          <a href="#"> Sobre Nosotros</a>
+        </div>
+
+
+        <div class="col-12 col-lg">
+          <a href="#"> Terminos y Condiciones</a>
+        </div>
+
+        <div class="col-12 col-lg">
+          <a href="#"> Privacidad</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!--Fotter Final-->
+   <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
